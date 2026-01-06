@@ -3,11 +3,132 @@ html, body {
     margin: 0;
 }
 
+/* body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+} */
 body {
     display: flex;
     justify-content: center; 
     flex-direction: column;
     align-items: center;    
+}
+.image-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.image-carousel img {
+display: none;
+width: 100%;
+border-radius: 8px;
+}
+
+.image-carousel img.active {
+display: block;
+}
+
+
+.image-carousel button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0,0,0,0.5);
+color: white;
+border: none;
+padding: 0.5rem;
+cursor: pointer;
+}
+
+.image-carousel .prev { left: 8px; }
+.image-carousel .next { right: 8px; }
+.project-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60vh;          /* controls visible height */
+    overflow-y: auto;     /* vertical scroll */
+    overflow-x: hidden;
+
+    border: 1px solid #ddd;
+}
+
+.project-list ul {
+    width: 80%;
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .project-list li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+} */
+.project-list li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #fafafa;
+}
+.project-info {
+    /* border: 1px solid #ccc; */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex: 2;
+}
+
+.project-image {
+    flex: 1;
+}
+.project-image img {
+    width: 500px;        
+    height: 400px;       
+    object-fit: cover;   
+    border-radius: 3%;  
+    /* border: 2px solid #333;  */
+}
+.project-image video {
+    width: 500px;        
+    height: 400px;       
+    object-fit: cover;   
+    border-radius: 3%;  
+    /* border: 2px solid #333;  */
+}
+.nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: white; 
+    display: flex; 
+    justify-content: center; 
+}
+.nav li a {
+    display: block; 
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: white;
+    color: #3f3e3e;
+}
+.nav {
+    position: fixed;
+    top:0;
+    width:100%;
 }
 .profile-pic img {
     width: 150px;        
