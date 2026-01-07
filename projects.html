@@ -20,7 +20,12 @@
         <ul>
             <li><div class="project-info">
                 <h3>Rust Chat Server</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="tech">
+                    <b>Languages used:</b> Rust, SQLite <br>
+                    <b>Technologies used:</b> AWS <br>
+                    <b>Github:</b><a href="https://github.com/rzheng1232/rust-chat-server.git"> server link</a>    <a href="https://github.com/rzheng1232/CS199-128-Final-Project-FA25-">app link</a>
+                </div>
+                I developed the server backend to a chat app as part of the final project for my CS:199:128 (Intro to Rust) course to learn more about the system design behind messaging platforms. The relatively simple chat server is written in Rust, hosted on AWS EC2, and stores user data in a SQLite database. It relies primarily on the Axum library for its web application framework and also uses Argon2 for simple password encryption. To associate users and chat groups in a clean and scalable manner, I used a bipartite graph structure, with one partition containing users, the other containing chats, and a third table storing the associations between the two. To process incoming messages with low latency and minimal synchronization overhead, I arranged them in a priority queue based on time of arrival and used multithreading with mutex locks to divide the workload. Overall, I found this to be a extremely valuable experience that taught me a great deal about designing effective and reliable systems in Rust. 
             </div><div class="project-image">
                 
                 <div class="image-carousel">
@@ -33,6 +38,11 @@
 
             <li><div class="project-info">
                 <h3>Recyclable classifier</h3>
+                <div class="tech">
+                    <b>Languages used:</b> Python, Flutter, Dart, SQLite <br>
+                    <b>Technologies used:</b> Flask, Tensorflow, Cloudflare Tunneling, Flutterflow, Firebase, Raspberry Pi, JSON <br>
+                    <b>Github:</b><a href="https://github.com/rzheng1232/EcoQuest-Backend"> backend link</a>
+                </div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div><div class="project-image">
                 
